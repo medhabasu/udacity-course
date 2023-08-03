@@ -1,17 +1,28 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# Analyse US bikeshare data
+This project lets users analyse travel patterns based on bikeshare data in three US cities - Washington, New York and Chicago. It presents analysis on travel times, popular stations, frequent trips and user profiles for a selected city.
 
 ### Date created
-Include the date you created this project and README file.
-
-### Project Title
-Replace the Project Title
+This project was created in July 2023.
 
 ### Description
-Describe what your project is about and what it does
+This project takes user input on which city, month and day they would like to explore data for. It lets users view the raw data as well as analysis on the following areas:
 
-### Files used
-Include the files used
+* Popular times of travel (i.e., occurs most often in the start time)
+* Popular stations and trip
+* Trip duration
+* User info
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+### Data used
+It uses randomly selected data for the first six months of 2017 for all three cities. All three cities have data on these six areas:
+
+* Start Time (e.g., 2017-01-01 00:07:57)
+* End Time (e.g., 2017-01-01 00:20:53)
+* Trip Duration (in seconds - e.g., 776)
+* Start Station (e.g., Broadway & Barry Ave)
+* End Station (e.g., Sedgwick St & North Ave)
+* User Type (Subscriber or Customer)
+
+The Chicago and New York City files also have the following two columns:
+* Gender
+* Birth Year
 
