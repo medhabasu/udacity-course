@@ -13,7 +13,7 @@ This project takes user input on which city, month and day they would like to ex
 * User info
 
 ### Data used
-It uses randomly selected data for the first six months of 2017 for all three cities. All three cities have data on these six areas:
+The project uses randomly selected data for the first six months of 2017 for all three cities. The data was provided by Motivate, a bike share system provider. All three cities have data on these six areas:
 
 * Start Time (e.g., 2017-01-01 00:07:57)
 * End Time (e.g., 2017-01-01 00:20:53)
@@ -22,7 +22,7 @@ It uses randomly selected data for the first six months of 2017 for all three ci
 * End Station (e.g., Sedgwick St & North Ave)
 * User Type (Subscriber or Customer)
 
-The Chicago and New York City files also have the following two columns:
+Chicago and New York City also have the following two columns:
 * Gender
 * Birth Year
 
