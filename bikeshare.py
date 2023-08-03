@@ -114,24 +114,24 @@ def time_stats(df, month, day):
     # display the most common month
     if month == 0:
         common_month = df['month'].value_counts()
-        common_month_count = common_month.iloc[0]
+        # common_month_count = common_month.iloc[0]
         common_month = common_month.index[0]
-        print('\nThe most popular month was {}, with a total of {} trips.'.format(months[common_month].title(), common_month_count))
+        print('\nThe most popular month was {}, with a total of {} trips.'.format(months[common_month].title(), common_month.iloc[0]))
 
     # display the most common day of week
     if day == 7:
         common_dow = df['dow'].value_counts()
-        common_dow_count = common_dow.iloc[0]
+        # common_dow_count = common_dow.iloc[0]
         common_dow = common_dow.index[0]
-        print('\nThe most popular day of the week was {}, with a total of {} trips.'.format(days[common_dow].title(), common_dow_count))
+        print('\nThe most popular day of the week was {}, with a total of {} trips.'.format(days[common_dow].title(), common_dow.iloc[0]))
 
 
     # display the most common start hour
     df['hour'] = pd.DatetimeIndex(df['Start Time']).hour
     common_hour = df['hour'].value_counts()
-    common_hour_count = common_hour.iloc[0]
-    common_hour = common_hour.index[0]
-    print('\nThe most popular hour of the day was {}:00, with a total of {} rides.'.format(common_hour, common_hour_count))
+    # common_hour_count = common_hour.iloc[0]
+    # common_hour = common_hour.index[0]
+    print('\nThe most popular hour of the day was {}:00, with a total of {} rides.'.format(common_hour.index[0], common_hour.iloc[0]))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
