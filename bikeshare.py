@@ -192,12 +192,12 @@ def user_stats(df, city):
     user_type = df['User Type'].value_counts()
     print("\nThere are two types of users: {} are {}s and {} are {}s.".format(user_type.iloc[0], user_type.index[0], user_type.iloc[1], user_type.index[1]))
 
-    # Display counts of gender
+    # Display counts of gender. Not available for Washington.
     if city != 'washington':
         gender_count = df['Gender'].value_counts()
         print('\nThere are {} {}s and {} {}s.'.format(gender_count.iloc[0], gender_count.index[0], gender_count.iloc[1], gender_count.index[1]))
 
-    # Display earliest, most recent, and most common year of birth
+    # Display earliest, most recent, and most common year of birth. Not available for Washington.
     if city != 'washington':
         earliest_dob = int(df['Birth Year'].min())
         latest_dob = int(df['Birth Year'].max())
